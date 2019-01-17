@@ -98,32 +98,32 @@ class Switch extends React.Component<Props> {
       Platform.OS === 'ios'
         ? checkedColor
         : disabled
-          ? theme.dark
-            ? setColor(white)
-                .alpha(0.1)
-                .rgb()
-                .string()
-            : setColor(black)
-                .alpha(0.12)
-                .rgb()
-                .string()
-          : setColor(checkedColor)
-              .alpha(0.5)
+        ? theme.dark
+          ? setColor(white)
+              .alpha(0.1)
               .rgb()
-              .string();
+              .string()
+          : setColor(black)
+              .alpha(0.12)
+              .rgb()
+              .string()
+        : setColor(checkedColor)
+            .alpha(0.5)
+            .rgb()
+            .string();
 
     const thumbTintColor =
       Platform.OS === 'ios'
         ? undefined
         : disabled
-          ? theme.dark
-            ? grey800
-            : grey400
-          : value
-            ? checkedColor
-            : theme.dark
-              ? grey400
-              : grey50;
+        ? theme.dark
+          ? grey800
+          : grey400
+        : value
+        ? checkedColor
+        : theme.dark
+        ? grey400
+        : grey50;
 
     const props =
       version && version.major === 0 && version.minor <= 56

@@ -79,8 +79,8 @@ class ToggleButtonGroup extends React.Component<Props> {
                 i === 0
                   ? styles.first
                   : i === count - 1
-                    ? styles.last
-                    : styles.middle,
+                  ? styles.last
+                  : styles.middle,
                 child.props.style,
               ],
             });

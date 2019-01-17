@@ -28,6 +28,7 @@ import TextExample from './TextExample';
 import TextInputExample from './TextInputExample';
 import ToggleButtonExample from './ToggleButtonExample';
 import TouchableRippleExample from './TouchableRippleExample';
+import SliderExample from './SliderExample';
 
 type Props = {
   theme: Theme,
@@ -37,6 +38,7 @@ type Props = {
 export const examples = {
   appbar: AppbarExample,
   banner: BannerExample,
+  slider: SliderExample,
   bottomNavigation: BottomNavigationExample,
   button: ButtonExample,
   card: CardExample,

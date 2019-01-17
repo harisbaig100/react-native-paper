@@ -145,8 +145,8 @@ class Chip extends React.Component<Props, State> {
       backgroundColor = mode === 'outlined'
         ? colors.surface
         : dark
-          ? '#383838'
-          : '#ebebeb',
+        ? '#383838'
+        : '#ebebeb',
     } = StyleSheet.flatten(style) || {};
 
     const borderColor =

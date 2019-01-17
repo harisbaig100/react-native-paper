@@ -20,6 +20,10 @@ export { List, Drawer };
 
 export { default as Banner } from './components/Banner';
 export { default as BottomNavigation } from './components/BottomNavigation';
+export { default as Slider } from './components/Slider/Slider';
+export {
+  default as SliderContainer,
+} from './components/Slider/SliderContainer';
 export { default as Button } from './components/Button';
 export { default as Card } from './components/Card/Card';
 export { default as Checkbox } from './components/Checkbox';

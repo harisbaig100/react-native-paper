@@ -138,8 +138,8 @@ class Appbar extends React.Component<Props> {
                 typeof child.props.color !== 'undefined'
                   ? child.props.color
                   : isDark
-                    ? white
-                    : black,
+                  ? white
+                  : black,
             };
 
             if (child.type === AppbarContent) {

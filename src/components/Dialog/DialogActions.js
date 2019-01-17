@@ -49,14 +49,12 @@ class DialogActions extends React.Component<Props> {
   render() {
     return (
       <View {...this.props} style={[styles.container, this.props.style]}>
-        {React.Children.map(
-          this.props.children,
-          child =>
-            React.isValidElement(child)
-              ? React.cloneElement(child, {
-                  compact: true,
-                })
-              : child
+        {React.Children.map(this.props.children, child =>
+          React.isValidElement(child)
+            ? React.cloneElement(child, {
+                compact: true,
+              })
+            : child
         )}
       </View>
     );

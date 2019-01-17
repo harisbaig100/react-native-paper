@@ -39,12 +39,6 @@
     "bootstrap": "yarn && yarn --cwd example && yarn --cwd docs",
     "release": "release-it"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "node ./scripts/validate-commit-message.js $HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn flow && yarn typescript && yarn test"
-    }
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

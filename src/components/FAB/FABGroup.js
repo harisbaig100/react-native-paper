@@ -211,14 +211,13 @@ class FABGroup extends React.Component<Props, State> {
       : this.state.backdrop;
 
     const opacities = this.state.animations;
-    const scales = opacities.map(
-      opacity =>
-        open
-          ? opacity.interpolate({
-              inputRange: [0, 1],
-              outputRange: [0.8, 1],
-            })
-          : 1
+    const scales = opacities.map(opacity =>
+      open
+        ? opacity.interpolate({
+            inputRange: [0, 1],
+            outputRange: [0.8, 1],
+          })
+        : 1
     );
 
     return (

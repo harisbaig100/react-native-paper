@@ -122,12 +122,8 @@ class Card extends React.Component<Props, State> {
     const { elevation } = this.state;
     const { roundness } = theme;
     const total = React.Children.count(children);
-    const siblings = React.Children.map(
-      children,
-      child =>
-        React.isValidElement(child) && child.type
-          ? child.type.displayName
-          : null
+    const siblings = React.Children.map(children, child =>
+      React.isValidElement(child) && child.type ? child.type.displayName : null
     );
     return (
       <Surface
@@ -144,16 +140,14 @@ class Card extends React.Component<Props, State> {
           testID={testID}
         >
           <View style={styles.innerContainer}>
-            {React.Children.map(
-              children,
-              (child, index) =>
-                React.isValidElement(child)
-                  ? React.cloneElement(child, {
-                      index,
-                      total,
-                      siblings,
-                    })
-                  : child
+            {React.Children.map(children, (child, index) =>
+              React.isValidElement(child)
+                ? React.cloneElement(child, {
+                    index,
+                    total,
+                    siblings,
+                  })
+                : child
             )}
           </View>
         </TouchableWithoutFeedback>

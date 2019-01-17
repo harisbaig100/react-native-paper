@@ -544,8 +544,8 @@ class TextInput extends React.Component<Props, State> {
                 backgroundColor: error
                   ? colors.error
                   : this.state.focused
-                    ? activeColor
-                    : underlineColorCustom,
+                  ? activeColor
+                  : underlineColorCustom,
                 // Underlines is thinner when input is not focused
                 transform: [{ scaleY: this.state.focused ? 1 : 0.5 }],
               },
@@ -636,8 +636,8 @@ class TextInput extends React.Component<Props, State> {
             mode === 'outlined'
               ? styles.inputOutlined
               : this.props.label
-                ? styles.inputFlatWithLabel
-                : styles.inputFlatWithoutLabel,
+              ? styles.inputFlatWithLabel
+              : styles.inputFlatWithoutLabel,
             {
               color: inputTextColor,
               fontFamily,
